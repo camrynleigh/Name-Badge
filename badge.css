@@ -1,0 +1,57 @@
+#form-field {
+    border: 10px double black;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#form-field input,
+#form-field button,
+#form-field textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#form-field textarea {
+    height: 67px;
+    resize: none;
+}
+
+#form-field .center-block {
+    max-width: 110px;
+}
+
+#badge {
+    border: 10px double black;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#badge .badge-element {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#badge .about .value {
+    height: 67px;
+    border: 1px solid black;
+}
+
+h2 {
+    text-align: center;
+    background-color: red;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: red;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}

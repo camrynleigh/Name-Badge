@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nameBadge">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="badge.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div ng-controller="MainController">
+        <div class="container">
+            <div class="row">
+                <form name="formInput" id="form-field">
+                    <div class="row">
+                        <div class="col-xs-6 one">
+                            <input placeholder="First Name" ng-model="FirstName" required>
+                        </div>
+                        <div class="col-xs-6 one">
+                            <input placeholder="Last Name" ng-model="LastName" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 one">
+                            <input placeholder="Email" ng-model="Email" required>
+                        </div>
+                        <div class="col-xs-6 one">
+                            <input placeholder="Place of Birth" ng-model="Birth" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 one">
+                            <input placeholder="Phone" ng-model="Phone" required>
+                        </div>
+                        <div class="col-xs-6 one">
+                            <input placeholder="Favorite Food" ng-model="Food" required/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <textarea class="col-xs-12" placeholder="Tell us about yourself" ng-model="About" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="center-block">
+                                <button class="btn" ng-click="click()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="badge" class="row">
+                <h2>Hello my name is:</h2>
+                <div class="row">
+                    <div class="badge-element name col-xs-6">
+                        <div class="badge-label">Name: {{name}}</div>
+                    </div>
+                    <div class="badge-element phone col-xs-6">
+                        <div class="badge-label">Phone: {{phone}}</div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="badge-element birth col-xs-6">
+                        <div class="badge-label">Place of birth: {{birth}}</div>
+
+                    </div>
+                    <div class="badge-element food col-xs-6">
+                        <div class="badge-label">Favorite food: {{food}}</div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="badge-element email col-xs-6">
+                        <div class="badge-label">Email: {{email}}</div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="badge-element about col-xs-12">
+                        <div class="value">{{about}}</div>
+                    </div>
+                </div>
+                <header></header>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="badge.js"></script>
+</body>
+
+</html>
